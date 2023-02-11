@@ -1,12 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CRUD</title>
+    </head>
+
+    <body>
+        <header><h1>CRUD</h1></header>
+        <div class="container">
+            <button id="delete-all">Eliminar</button>
+            <form>
+                <label>name: </label>
+                <input type="text" name="name" id="name">
+
+                <label>last name: </label>
+                <input type="text" name="last-name" id="last-name">
+
+                <label>age: </label>
+                <input type="text" name="age" id="age">
+
+                <label>gender: </label>
+                <input type="text" name="gender" id="gender">
+
+                <button id="add-button">Add Person</button>
+            </form>
+
+            <div id="content">
+
+            </div>
+
+            <table id="data-table">
+                <thead>
+                    <th>Name</th>
+                    <th>Last name</th>
+                    <th>Age</th>
+                    <th>Gender</th>
+                </thead>
+                <tbody>
+            
+                </tbody>
+            </table>
+        </div>
+        <script src="src/js/main.js"></script>
+    </body>
 </html>
